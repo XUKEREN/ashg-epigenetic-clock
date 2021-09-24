@@ -11,3 +11,5 @@ Generated with [posterdown](https://github.com/brentthorne/posterdown) `betterla
 1. Codes: [link](https://github.com/XUKEREN/ashg_EpigeneticClock/blob/main/epigenetic_age.Rmd).
 
 1. 3 minutes narration: [link](https://github.com/XUKEREN/ashg_EpigeneticClock/blob/main/3689_KerenXu.mp3).  
+
+![](poster.png)
