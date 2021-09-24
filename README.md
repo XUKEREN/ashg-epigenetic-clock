@@ -5,8 +5,6 @@
 Generated with [posterdown](https://github.com/brentthorne/posterdown) `betterland` format.    
 
 1. Poster in pdf: [link](https://github.com/XUKEREN/ashg_EpigeneticClock/blob/main/3689_KerenXu.pdf)  
-   
-1. Poster in html: [link]()
 
 1. Codes: [link](https://github.com/XUKEREN/ashg_EpigeneticClock/blob/main/epigenetic_age.Rmd)  
 
