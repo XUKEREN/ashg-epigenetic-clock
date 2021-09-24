@@ -130,9 +130,6 @@ library(kableExtra)
 dt <- data.table::fread("tb.csv") 
 dt <- dt %>% mutate(p=ifelse(is.na(p), "", p), obs = ifelse(is.na(obs), "", obs))
 
-
-# dt[c(4,8,12),1] = cell_spec(dt[c(4,8,12),1], color = "red", align = "c", font_size = 50)
-
 kbl(dt, align = "l", booktabs = T, linesep = "") %>%
 kable_styling(full_width = T, position = "center",font_size = 120) %>%
 footnote(general = "Model 1 adjusted for sex, 9 EPISTRUCTURE PCs, and batch; Model 2 additionally adjusted for blood cell proportions; Model 3 is model 2 excluding high nRBC subjects and subjects with *GATA1* mutation. "
