@@ -1,0 +1,13 @@
+﻿term,estimate (95% CI),p,obs
+Model 1,,,
+DS,"0.3502 (0.3126,0.3878)",8.30E-63,835
+Chronological age,"0.0003 (-0.0006,0.0011)",0.527,835
+Age accel. for DS,355.23 days,,
+Model 2,,,
+DS,"0.2419 (0.1940,0.2898)",6.42E-22,835
+Chronological age,"0.0008 (0.0001,0.0015)",0.0224,835
+Age accel. for DS,236.89 days,,
+Model 3,,,
+DS,"0.1285 (0.0911,0.1658)",3.18E-11,768
+Chronological age,"0.0005 (0.0001,0.0009)",0.0238,768
+Age accel. for DS,126.50 days,,

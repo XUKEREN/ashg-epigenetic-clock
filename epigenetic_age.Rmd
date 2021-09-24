@@ -1,0 +1,153 @@
+---
+title: Accelerated epigenetic aging in newborns with Down syndrome
+author:
+  - name: Keren Xu
+    affil: 1
+  - name: Shaobo Li
+    affil: 1
+  - name: Ivo S. Muskens
+    affil: 1
+  - name: Natalina Elliott
+    affil: 2
+  - name: Swe Swe Myint
+    affil: 1
+  - name: Priyatama Pandey
+    affil: 1
+  - name: Xiaomei Ma
+    affil: 3
+  - name: Catherine Metayer
+    affil: 4
+  - name: Beth A. Mueller
+    affil: 5
+  - name: Kyle M. Walsh
+    affil: 6
+  - name: Irene Roberts
+    affil: 2
+  - name: Steve Horvath
+    affil: 7
+  - name: Joseph L. Wiemels
+    affil: 1
+  - name: Adam J. de Smith
+    affil: 1
+affiliation:
+  - num: 1
+    address: Center for Genetic Epidemiology, Department of Population and Public Health Sciences, Keck School of Medicine of the University of Southern California, Los Angeles, CA, USA
+  - num: 2
+    address: Department of Paediatrics and MRC Molecular Haematology Unit, Weatherall Institute of Molecular Medicine, Oxford University and BRC Blood Theme, NIHR Oxford Biomedical Centre, Oxford, UK
+  - num: 3
+    address: Department of Chronic Disease Epidemiology, Yale School of Public Health, New Haven, CT, USA
+  - num: 4
+    address: School of Public Health, University of California, Berkeley, Berkeley, CA, USA
+  - num: 5
+    address: Public Health Sciences Division, Fred Hutchinson Cancer Research Center, Seattle, WA, USA
+  - num: 6
+    address: Department of Neurosurgery, Duke University, Durham, NC, USA
+  - num: 7
+    address: Department of Biostatistics, Fielding School of Public Health, University of California, Los Angeles, Los Angeles, CA, USA
+main_findings:
+  - "**Down syndrome** is associated with **increased DNAmAge** in **newborns**, with an age acceleration of 237 days."
+  - '![](https://raw.githubusercontent.com/XUKEREN/ashg_EpigeneticClock/main/Figures/figure1.png){.main_pic width=100%}'
+logoright_name: '![](https://raw.githubusercontent.com/XUKEREN/ashg_EpigeneticClock/main/Figures/KSOM_DeptofPopPublicHS_1lineWhtGold.png){.main-img-right width=28%}'
+output: 
+  posterdown::posterdown_betterland:
+    self_contained: false
+    pandoc_args: --mathjax
+    highlight: haddock
+    number_sections: false
+bibliography: reference.bib
+poster_height: "32in"
+poster_width: "56.88in"
+title_textsize: "100pt"
+authorextra_textsize: "35pt"
+affiliation_textsize: "25pt"
+sectitle_textsize: "60pt"
+sectitle2_textsize: "40pt"
+primary_colour: '#990000'
+accent_colour: "#000000"
+secondary_colour: "#990000"
+body_bgcol: "#ffffff"
+body_textsize: "48px"
+body_textcol: "#000000"
+main_fontfamily: "Rasa"
+affiliation_textcol: "#000000"
+main_width: 0.45
+column_padding: "10mm"
+main_textsize: "175px"
+caption_textzie: "80pt"
+reference_textsize: "32px"
+csl: blood.csl
+---
+
+```{css, echo = F}
+tbody tr:nth-child(odd){
+  background-color: #FFFFFF;
+}
+
+tbody tr:nth-of-type(4n+1) td {
+  background: #eacccc;
+}
+
+tfoot {
+  font-size: 80%;
+}
+```
+
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(results = 'asis',
+                      echo = FALSE,
+                      warning = FALSE,
+                      tidy = FALSE,
+                      message = FALSE,
+                      fig.align = 'center',
+                      out.width = "100%")
+options(knitr.table.format = "html") 
+```
+
+
+# Introduction
+
+Accelerated aging is a hallmark of Down syndrome (DS), with adults experiencing early-onset Alzheimer’s disease and premature aging of skin, hair, and immune and endocrine systems. Accelerated epigenetic aging was found in blood and brain tissue of adults with DS [@horvathAcceleratedEpigeneticAging2015], but when this premature aging begins is unknown. We investigated whether accelerated aging in DS is already detectable in blood at birth.  
+
+# Methods
+
+- Dried bloodspots were obtained from 347 newborns with DS and 567 newborns without DS from California or Washington. DNA was isolated, bisulfite-converted, and assayed on Illumina MethylationEPIC DNA methylation (DNAm) arrays [@muskensGenomewideImpactTrisomy2021].  
+- We calculated epigenetic age (DNAmAge) using a published epigenetic clock (391 CpGs) [@horvathEpigeneticClockSkin2018] and performed reference-based deconvolution of blood cell proportions using the "Identifying Optimal Libraries" algorithm [@koestlerImprovingCellMixture2016].  
+- *GATA1* was sequenced in a subset of 184 newborns with DS to identify somatic mutations associated with transient abnormal myelopoiesis.  
+- We compared DNAmAge between DS and non-DS newborns using linear regression adjusting for chronological age from conception (gestational age plus age at blood sampling), sex, batch, blood cell proportions, and genetic ancestry using EPISTRUCTURE [@rahmaniGenomewideMethylationData2017]. Age acceleration was calculated as the deviation from expected DNAmAge based on its linear association with chronological age in non-DS newborns. We repeated analyses excluding 61 newborns (60 DS) exceeding mean+1SD for nucleated red blood cell (nRBC) proportions and 30 *GATA1*-positive DS newborns to address potential confounding. We tested for association between *GATA1* mutation variant allele frequency (VAF) and DNAmAge in DS newborns.    
+
+# Results
+
+- Mean chronological age from conception was 269 days in DS and 276 in non-DS newborns. Chronological age was significantly positively correlated with DNAmAge in both DS and non-DS newborns (**Figure**).  
+- Blood cell proportions were significantly associated with DS status and DNAmAge, including strong correlation between nRBCs and DNAmAge (r=0.29, p=$5.8*10^{-19}$).  
+- Adjusting for cell proportions, DS was significantly associated with increased DNAmAge (beta=0.2419, p=$6.42*10^{-22}$), with an age acceleration of 237 days (**Table**). This association remained after excluding high nRBC newborns and *GATA1*-positive DS newborns (beta=0.1285, p=$3.18*10^{-11}$, age acceleration=127 days).  
+- Among newborns with DS, *GATA1* mutations were associated with increased DNAmAge (p=$6.65*10^{-12}$), with age acceleration of 115 days per 10% increase in VAF.   
+
+
+```{r, regressiontable}
+library(tidyverse)
+library(kableExtra)
+dt <- data.table::fread("tb.csv") 
+dt <- dt %>% mutate(p=ifelse(is.na(p), "", p), obs = ifelse(is.na(obs), "", obs))
+
+
+# dt[c(4,8,12),1] = cell_spec(dt[c(4,8,12),1], color = "red", align = "c", font_size = 50)
+
+kbl(dt, align = "l", booktabs = T, linesep = "") %>%
+kable_styling(full_width = T, position = "center",font_size = 120) %>%
+footnote(general = "Model 1 adjusted for sex, 9 EPISTRUCTURE PCs, and batch; Model 2 additionally adjusted for blood cell proportions; Model 3 is model 2 excluding high nRBC subjects and subjects with *GATA1* mutation. "
+) %>% add_header_above(c("Table. Linear regression comparing DNAmAge between DS and non-DS newborns." = 4), bold = T, font_size = 44) %>%
+  row_spec(c(8,12), font_size = 60, color = "#990000", bold = T) %>% kable_paper(html_font = "Rasa")
+```
+
+# Conclusion  
+
+Our results support that accelerated aging in blood in DS begins prenatally, with implications for the pathophysiology of immunosenescence and other aging-related traits in DS.  
+
+# References  
+
+<style>
+.table>tbody>tr>td{
+  padding: 1px;
+}
+</style>
